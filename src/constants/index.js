@@ -20,9 +20,9 @@ import {
     tesla,
     shopify,
     carrent,
-    jobit,
     tripguide,
     threejs,
+    jobit,
   } from "../assets";
   
   export const navLinks = [
@@ -129,7 +129,7 @@ import {
       ],
     },
     {
-      title: "React  Developer",
+      title: "Web  Developer",
       company_name: "Tesla",
       icon: tesla,
       iconBg: "#E6DEDD",
@@ -142,7 +142,7 @@ import {
       ],
     },
     {
-      title: "Web Developer",
+      title: "React Developer",
       company_name: "Shopify",
       icon: shopify,
       iconBg: "#383E56",
@@ -216,7 +216,7 @@ import {
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link:"https://github.com/bapidasdev/portfolio.git",
     },
     {
       name: "Job IT",
@@ -237,7 +237,7 @@ import {
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link:"https://github.com/bapidasdev/portfolio.git",
     },
     {
       name: "Trip Guide",
@@ -258,8 +258,8 @@ import {
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link:"https://github.com/bapidasdev/portfolio.git",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, };

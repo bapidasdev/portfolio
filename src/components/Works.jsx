@@ -9,12 +9,14 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+import img2 from "../assets/fiverr.png"
+
 const ProjectCard = ({
   index,
   name,
   description,
   tags,
-  image,
+ 
   source_code_link,
 }) => {
   return (
@@ -29,7 +31,7 @@ const ProjectCard = ({
       >
         <div className='relative w-full h-[230px]'>
           <img
-            src={image}
+            src={img2}
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
