@@ -41,7 +41,7 @@ const Contact = () => {
       //template_ldhwu88
       //service_za4z814
       //ACss-vDgJLLj6Gq7s
-
+    
       .send(
         'service_za4z814',
         'template_ldhwu88',
@@ -50,7 +50,8 @@ const Contact = () => {
           to_name: 'Bapi',
           from_email: form.email,
           to_email: "das316456@gmail.com",
-          message: form.message,
+
+          message: `${form.message} email of the sender ${form.email}`
         },
         'ACss-vDgJLLj6Gq7s'
       )
@@ -76,11 +77,11 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden `}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-8 overflow-hidden w-full h-full`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75] bg-black-100 p-8 rounded-2xl h-full'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -88,10 +89,10 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className='mt-12 flex flex-col gap-6'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+            <span className='text-white font-medium mb-3'>Your Name</span>
             <input
               type='text'
               name='name'
@@ -117,7 +118,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
-              rows={7}
+              rows={4}
               name='message'
               value={form.message}
               onChange={handleChange}
